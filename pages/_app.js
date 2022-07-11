@@ -1,7 +1,6 @@
 // pages/_app.js
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
 
 function MyApp({ Component, pageProps }) {
 

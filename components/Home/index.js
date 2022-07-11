@@ -49,7 +49,7 @@ const HomePage = () => {
                 </Box>
             </Center>
             <Center>
-                <Box maxW={'1400px'}>
+                <Box>
                     {data.id ? (
                         <Tabs align='center'>
                             <TabList marginBottom={'3rem'} borderBottom={'none'}>
@@ -107,7 +107,7 @@ const HomePage = () => {
                                         </Box>
                                     </SimpleGrid>
                                 </TabPanel>
-                                <TabPanel>
+                                <TabPanel p={'none'}>
                                     <Box>
                                         <Text textAlign={'left'} m={3}>{dataRepos.length} Results</Text>
                                         {dataRepos.map(item =>
@@ -115,7 +115,7 @@ const HomePage = () => {
                                                 <Grid align='start'>
                                                     <GridItem>
                                                         <Box p={3} border={'1px solid #58a6ff'} m={2} borderRadius={10}>
-                                                            <Link href={item.svn_url} isExternal><Text fontSize='2xl' color={'#58a6ff'}>{item.name}</Text></Link>
+                                                            <Link href={item.svn_url} isExternal><Text fontSize='2xl' wordBreak={"break-word"} color={'#58a6ff'}>{item.name}</Text></Link>
                                                             <Text fontSize='1xl'>{item.description ? item.description : 'No description available'}</Text>
                                                             <Stack direction='row' marginTop={2}>
                                                                 <Text fontSize='1xl'>{item.language}</Text>

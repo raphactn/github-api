@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         body: {
           bg: '#0d1117',
           color: 'white',
-          minWidth: '400px'
+          minWidth: '450px'
         }
       })
     },
